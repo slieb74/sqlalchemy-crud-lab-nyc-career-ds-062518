@@ -1,18 +1,19 @@
 from sqlalchemy import create_engine
 from schema import State
 from sqlalchemy.orm import sessionmaker
+from schema import Base, engine
 
-engine = create_engine('sqlite:///states.db', echo=True)
 
 def create_new_york():
     Session = sessionmaker(bind=engine)
     session = Session()
+    # complete the query here
 
 def create_wyoming():
-
+    pass
 
 def query_all_states():
-
+    pass
 
 # def create_cali():
 #     Session = sessionmaker(bind=engine)
@@ -22,6 +23,7 @@ def query_all_states():
 #     session.commit()
 
 def update_cali():
+    pass
 
 # def create_connecticut():
 #     Session = sessionmaker(bind=engine)
@@ -31,8 +33,9 @@ def update_cali():
 #     session.commit()
 
 def delete_connecticut():
+    pass
 
-def rollback_session_changes():
+# def rollback_session_changes():
     # Session = sessionmaker(bind=engine)
     # session = Session()
     # west_dakota = State(name="West Dakota", capital_city="Fake City", population=123456, landlocked=True)

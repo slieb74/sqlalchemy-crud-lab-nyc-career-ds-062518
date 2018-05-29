@@ -2,6 +2,7 @@ import unittest, sqlite3, sys
 sys.path.insert(0, '..')
 from states_controller import *
 
+exec(open("../schema.py").read())
 connection = sqlite3.connect('states.db')
 cursor = connection.cursor()
 

@@ -53,7 +53,9 @@ For now, we will just query all the data in our table.  We will explore more adv
 
 #### UPDATE
 
-Uncomment the `create_cali()` function.  In `update_cali()`:
+First, uncomment the `create_cali()` function.  
+
+Then in the `update_cali()` function:
 
 * Find California by using `session.query()` in conjunction with `filter_by`.  You can read about the latter method [here](http://docs.sqlalchemy.org/en/latest/orm/query.html#sqlalchemy.orm.query.Query.filter_by).
 
@@ -61,7 +63,9 @@ Uncomment the `create_cali()` function.  In `update_cali()`:
 
 #### DELETE
 
-Uncomment the `create_connecticut()` function.  In `delete_connecticut()`:
+First, uncomment the `create_connecticut()` function.  
+
+Then in  the `delete_connecticut()`:
 
 * Find the Connecticut object
 * Delete it from the database 
@@ -69,3 +73,7 @@ Uncomment the `create_connecticut()` function.  In `delete_connecticut()`:
 ### Session Rollbacks
 
 Remember if we mistakenly change data during a session, we can rollback the error as long as we haven't already committed those changes to the database.  In the final method, uncomment the code for adding West Dakota to the table.  Write a rollback so that this "state" doesn't get added to the database when we commit the session.
+
+## Summary
+
+In this lab, we practiced setting up a connection to our database and creating a session. We then practiced defining CRUD functions that would create, read, update, and delete information from our database. 
